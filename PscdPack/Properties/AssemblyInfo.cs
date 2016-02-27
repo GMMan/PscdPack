@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sega Genesis Classics ROM Packer")]
-[assembly: AssemblyDescription("Packs and extracts Sega Genesis Classics ROM pack files.")]
+[assembly: AssemblyTitle("SEGA Genesis Classics ROM Packer")]
+[assembly: AssemblyDescription("Packs and extracts SEGA Genesis Classics ROM pack files.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GMWare")]
-[assembly: AssemblyProduct("Sega Genesis Classics ROM Packer")]
+[assembly: AssemblyProduct("SEGA Genesis Classics ROM Packer")]
 [assembly: AssemblyCopyright("Copyright 2016 cyanic")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -47,7 +47,6 @@ namespace PscdPack
 
         void enableInterface()
         {
-            saveButton.Enabled = true;
             closeButton.Enabled = true;
             replaceRomButton.Enabled = true;
         }
@@ -92,7 +91,7 @@ namespace PscdPack
                     return false;
                 }
                 ushort sm;
-                if (!ushort.TryParse(extraPageMaskTextBox.Text, System.Globalization.NumberStyles.HexNumber, null, out sm))
+                if (!ushort.TryParse(extraSizeMaskTextbox.Text, System.Globalization.NumberStyles.HexNumber, null, out sm))
                 {
                     MessageBox.Show(this, "Cannot parse size mask as a 16-bit hexadecimal number.", Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
@@ -152,6 +151,7 @@ namespace PscdPack
                     if (pak.FileHasContent)
                     {
                         pak.Load();
+                        saveButton.Enabled = true;
                         dumpRomButton.Enabled = true;
                         replaceThumbButton.Enabled = true;
                         romSizeLabel.Text = (pak.ImageSize / 1024) + " KB";
@@ -296,9 +296,9 @@ namespace PscdPack
                                 else
                                 {
                                     // Probably EEPROM
-                                    mode = (ExtraSaveMode)((y >> 6) + 1); // I'm spitballing here
+                                    mode = ExtraSaveMode.EepromMode1; // Give a reasonable default
                                     extraPageMaskTextBox.Text = ramStartPacked.ToString("X4");
-                                    extraSizeMaskTextbox.Text = (ramStart & 0xffff).ToString("X4");
+                                    extraSizeMaskTextbox.Text = (256 >> 8).ToString("X4");
                                 }
                                 extraSaveModeComboBox.SelectedIndex = (int)mode;
                             }
@@ -335,6 +335,7 @@ namespace PscdPack
                     }
                     catch { }
 
+                    saveButton.Enabled = true;
                     replaceThumbButton.Enabled = true;
                     MessageBox.Show(this, "ROM replaced.", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

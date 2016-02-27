@@ -69,13 +69,13 @@ namespace PscdPack
         /// <summary>
         /// Gets or sets the size of on-cartridge memory.
         /// 
-        /// For SRAM, it is the number of 256-byte pages. For EEPROM, it is the byte index of the /SDA line in the page selected.
+        /// It is the number of 256-byte pages the memory provides.
         /// </summary>
-        public ushort ExtraSaveSizeMask { get; set; } // SRAM size, number of 256-byte blocks or EEPROM /SDA line address within page, offset by byte
+        public ushort ExtraSaveSizeMask { get; set; }
         /// <summary>
         /// Gets or sets the mode for on-cartridge memory.
         /// </summary>
-        public ExtraSaveMode ExtraSaveMode { get; set; } // SRAM/EEPROM mode
+        public ExtraSaveMode ExtraSaveMode { get; set; }
         /// <summary>
         /// Gets or sets the game's region.
         /// </summary>

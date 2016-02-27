@@ -314,7 +314,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Sega Genesis Classics ROM Packer";
+            this.Text = "SEGA Genesis Classics ROM Packer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFormFormClosing);
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.groupBox1.ResumeLayout(false);
