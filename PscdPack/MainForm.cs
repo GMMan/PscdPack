@@ -308,14 +308,14 @@ namespace PscdPack
                             }
 
                             // Game region
-                            ms.Seek(0x1c0, SeekOrigin.Begin);
+                            ms.Seek(0x1f0, SeekOrigin.Begin);
                             string regions = new string(br.ReadChars(0x10)).TrimEnd(' ');
                             int rflags = 0;
                             if (regions.Contains("U")) rflags |= 1 << 0;
                             if (regions.Contains("J")) rflags |= 1 << 1;
                             if (regions.Contains("E")) rflags |= 1 << 2;
                             RomRegion renum = RomRegion.Worldwide;
-                            if (rflags == (rflags & ~rflags)) // Only one flag present 
+                            if (rflags != 0 && (rflags & (rflags - 1)) == 0) // Only one flag present 
                             {
                                 switch (rflags)
                                 {
