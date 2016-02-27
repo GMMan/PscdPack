@@ -292,7 +292,7 @@
             // saveFileDialog
             // 
             this.saveFileDialog.DefaultExt = "pak";
-            this.saveFileDialog.Filter = "Sega Genesis Classics ROM Pack|*.pak";
+            this.saveFileDialog.Filter = "SEGA Genesis Classics ROM Pack|*.pak";
             this.saveFileDialog.OverwritePrompt = false;
             this.saveFileDialog.Title = "Open or Create ROM Pack";
             // 
