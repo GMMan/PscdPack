@@ -123,7 +123,7 @@
             this.extraSizeMaskTextbox.Location = new System.Drawing.Point(202, 71);
             this.extraSizeMaskTextbox.Name = "extraSizeMaskTextbox";
             this.extraSizeMaskTextbox.Size = new System.Drawing.Size(52, 20);
-            this.extraSizeMaskTextbox.TabIndex = 8;
+            this.extraSizeMaskTextbox.TabIndex = 7;
             // 
             // extraSaveModeComboBox
             // 
@@ -132,7 +132,7 @@
             this.extraSaveModeComboBox.Location = new System.Drawing.Point(6, 71);
             this.extraSaveModeComboBox.Name = "extraSaveModeComboBox";
             this.extraSaveModeComboBox.Size = new System.Drawing.Size(132, 21);
-            this.extraSaveModeComboBox.TabIndex = 7;
+            this.extraSaveModeComboBox.TabIndex = 5;
             // 
             // extraPageMaskTextBox
             // 
@@ -146,7 +146,7 @@
             this.romSizeLabel.Location = new System.Drawing.Point(70, 42);
             this.romSizeLabel.Name = "romSizeLabel";
             this.romSizeLabel.Size = new System.Drawing.Size(184, 13);
-            this.romSizeLabel.TabIndex = 5;
+            this.romSizeLabel.TabIndex = 3;
             this.romSizeLabel.Text = "Not loaded";
             // 
             // nameTextBox
@@ -154,7 +154,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(70, 19);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(184, 20);
-            this.nameTextBox.TabIndex = 4;
+            this.nameTextBox.TabIndex = 1;
             // 
             // label4
             // 
@@ -162,7 +162,7 @@
             this.label4.Location = new System.Drawing.Point(6, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Region:";
             // 
             // label3
@@ -171,7 +171,7 @@
             this.label3.Location = new System.Drawing.Point(6, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 13);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 4;
             this.label3.Text = "On-cartridge Memory Config:";
             // 
             // label2
@@ -180,7 +180,7 @@
             this.label2.Location = new System.Drawing.Point(6, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 2;
             this.label2.Text = "ROM Size:";
             // 
             // label1
