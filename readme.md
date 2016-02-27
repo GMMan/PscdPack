@@ -21,6 +21,9 @@ are not:
 - The pack file is locked while it's open. If you want to try the pack without exiting
   the program, click close and the file will be unlocked so it can be read by the emulator.
 
+Important: the ROM image must be a raw dump. If you have a SMD/MD file, you will have to
+convert it to BIN first. For reference: http://www.emulatronia.com/doctec/consolas/megadrive/genesis_rom.txt
+
 On-cartridge Memory Config
 --------------------------
 For ROMs that came from cartridges with built-in SRAM or EEPROM, you will need to set
