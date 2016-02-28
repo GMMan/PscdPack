@@ -65,13 +65,13 @@ namespace PscdPack
         /// 
         /// Value is the memory address right-shifted by 12 bits.
         /// </summary>
-        public ushort ExtraSavePageMask { get; set; } // SRAM page or EEPROM /SDA line page, address up to 16383 4KiB pages;
+        public ushort ExtraSavePage { get; set; } // SRAM page or EEPROM /SDA line page, address up to 16383 4KiB pages;
         /// <summary>
         /// Gets or sets the size of on-cartridge memory.
         /// 
         /// It is the number of 256-byte pages the memory provides.
         /// </summary>
-        public ushort ExtraSaveSizeMask { get; set; }
+        public ushort ExtraSaveSizePageCount { get; set; }
         /// <summary>
         /// Gets or sets the mode for on-cartridge memory.
         /// </summary>
@@ -145,8 +145,8 @@ namespace PscdPack
             Reserved2 = br.ReadByte();
             Reserved3 = br.ReadByte();
             Reserved4 = br.ReadUInt32();
-            ExtraSavePageMask = br.ReadUInt16();
-            ExtraSaveSizeMask = br.ReadUInt16();
+            ExtraSavePage = br.ReadUInt16();
+            ExtraSaveSizePageCount = br.ReadUInt16();
             ExtraSaveMode = (ExtraSaveMode)br.ReadInt32();
             Region = (RomRegion)br.ReadInt32();
 
@@ -263,8 +263,8 @@ namespace PscdPack
             bw.Write(Reserved2);
             bw.Write(Reserved3);
             bw.Write(Reserved4);
-            bw.Write(ExtraSavePageMask);
-            bw.Write(ExtraSaveSizeMask);
+            bw.Write(ExtraSavePage);
+            bw.Write(ExtraSaveSizePageCount);
             bw.Write((int)ExtraSaveMode);
             bw.Write((int)Region);
 

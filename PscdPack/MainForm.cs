@@ -96,8 +96,8 @@ namespace PscdPack
                     MessageBox.Show(this, "Cannot parse size mask as a 16-bit hexadecimal number.", Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                pak.ExtraSavePageMask = pm;
-                pak.ExtraSaveSizeMask = sm;
+                pak.ExtraSavePage = pm;
+                pak.ExtraSaveSizePageCount = sm;
                 pak.Name = nameTextBox.Text;
                 pak.Region = (RomRegion)regionComboBox.SelectedIndex;
                 pak.Save();
@@ -163,8 +163,8 @@ namespace PscdPack
                     }
                     nameTextBox.Text = pak.Name;
                     if ((int)pak.ExtraSaveMode < extraSaveModeComboBox.Items.Count) extraSaveModeComboBox.SelectedIndex = (int)pak.ExtraSaveMode;
-                    extraPageMaskTextBox.Text = pak.ExtraSavePageMask.ToString("X4");
-                    extraSizeMaskTextbox.Text = pak.ExtraSaveSizeMask.ToString("X4");
+                    extraPageMaskTextBox.Text = pak.ExtraSavePage.ToString("X4");
+                    extraSizeMaskTextbox.Text = pak.ExtraSaveSizePageCount.ToString("X4");
                     if ((int)pak.Region < regionComboBox.Items.Count) regionComboBox.SelectedIndex = (int)pak.Region;
                     enableInterface();
                 }
