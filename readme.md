@@ -33,7 +33,7 @@ is the SRAM size. It is the number of 256-byte pages the SRAM provides. Both tex
 in 16-bit hex. See https://genplus-gx.googlecode.com/files/gen_eeprom.pdf for a list of
 games that contain EEPROM and for their configuration.
 
-Note: EEPROM saving may not work for non-SEGA games because of different mapper used.
+Note: EEPROM saving may not work for non-SEGA games because of different mappers/modes used.
 
 DisableBankSwitching mode disables the bank switching mechanism used in Super Street Figher
 II. See http://emu-docs.org/Genesis/ssf2.txt for more information. You typically do not
@@ -48,3 +48,5 @@ The following limitations applies on the emulator, so not every pack made will b
 - If you are using the PscdFormat class in the program, you can choose to not flip words.
   However, the emulator will refuse to load non-flipped ROMs.
 - Packs must have no trailing junk bytes.
+- ROMs operating EEPROM in mode 3 may not work.
+- EA (with EEPROM) and J-Cart ROMs may not work.

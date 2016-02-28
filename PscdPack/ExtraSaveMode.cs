@@ -28,11 +28,11 @@ namespace PscdPack
         /// </summary>
         EepromMode2,
         /// <summary>
-        /// Cartridge contains EEPROM operating in mode 3.
+        /// Cartridge uses the Acclaim 32M mapper.
         /// </summary>
-        EepromMode3,
+        EepromAcclaim32M,
         /// <summary>
-        /// Disable the bank switching mechanism used in Super Street Fighter II.
+        /// Disable emulation of SEGA 315-5779 mapper bank switching mechanism.
         /// </summary>
         DisableBankSwitching
     }
