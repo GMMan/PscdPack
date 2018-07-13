@@ -30,7 +30,7 @@ For ROMs that came from cartridges with built-in SRAM or EEPROM, you will need t
 this section. The dropdown contains the memory mode. The first textbox is the page mask,
 which is the address that the SRAM is mapped to, right shifted 12 bits. The second textbox
 is the SRAM size. It is the number of 256-byte pages the SRAM provides. Both textboxes are
-in 16-bit hex. See https://genplus-gx.googlecode.com/files/gen_eeprom.pdf for a list of
+in 16-bit hex. See https://krikzz.com/pub/support/everdrive-md/v2/gen_eeprom.pdf for a list of
 games that contain EEPROM and for their configuration.
 
 Note: EEPROM saving may not work for non-SEGA games because of different mappers/modes used.
